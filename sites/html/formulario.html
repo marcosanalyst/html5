@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário Aqui</h1>
+
+    <form>
+        <!--LEGENDA PARA NOME-->
+        <label for="campo_nome">Nome:</label>
+        <!--INPUT NOME-->
+        <input id= "campo_nome" type="text" placeholder="Digite seu Nome aqui" required>
+        <br>
+        <!--LEGENDA PARA SOBRE NOME-->
+        <label for="campo_sobrenome">Sobrenome:</label>
+        <!--INPUT SOBRENOME-->
+        <input id="campo_sobrenome" type="text" placeholder="Digite seu Sobrenome" required>
+        <br>
+        <!--LEGENDA PARA EMAIL-->
+        <label for="campo_email">Email</label>
+        <!--INPUT EMAIL-->
+        <input id="campo_email" type="email" placeholder="Digite seu email" required>
+        <br>
+        <!--LEGENDA PARA SENHA-->
+        <label for="campo_senha">Senha:</label>
+        <!--INPUT SENHA-->
+        <input id="campo_senha" type="password" placeholder="Digite sua Senha">
+        <br>
+        <input type="radio" id="basic" nome="nível" value="Básico">
+        <label for="basic">Básico</label>
+        <br>
+        <input type="radio" id="intermediate" nome="nível" value="Intermediário">
+        <label for="intermediate">Intermediário</label>
+        <br>
+        <input type="radio" id="advanced" nome="nível" value="Avançado">
+        <label for="advanced">Avançado</label>
+        <br>
+        <input type="radio" id="fluent" nome="nível" value="Fluente">
+        <label for="fluent">Fluente</label>
+        <br><br>
+
+        <h2>Quais opções você tem conhecimento?</h2>
+        
+        <input type="checkbox" id="lnx" nome="conhecimentos" value="Linux">
+        <label for="lnx">Linux</label>
+
+        <input type="checkbox" id="sql" nome="conhecimentos" value="SQL">
+        <label for="sql">SQL</label>
+
+        <input type="checkbox" id="py" nome="conhecimentos" value="Python">
+        <label for="py">Python</label>
+
+        <input type="checkbox" id="node" nome="conhecimentos" valeu="Node.JS">
+        <label for="node">Node.Js</label>
+
+        <input type="checkbox" id="react" nome="conhecimentos" value="React Native">
+        <label for="react">React Native</label>
+
+        <input type="checkbox" id="angu" nome="conhecimentos" value="Angular">
+        <label for="angu">Angular</label>
+
+        <h3>Como você prefere atuar na empresa?</h3>
+        <select name="preferência">
+            <option selected disabled value="">Selecione uma opção</option>
+            <option value="presencial">Presencial</option>
+            <option value="hibrido">Hibrido</option>
+            <option value="remoto">Remoto</option>
+                       
+        </select>
+        <br></br><br>
+        
+        <h3>Digite sua mensagem:</h3>
+        <textarea placeholder="Digite aqui sua mensagem" rows="15" cols="55">Um texto de exemplo
+        </textarea>
+               
+        
+        <br></br>
+        <!--LEGENDA PARA SUBMIT--> <!--INPUT ENVIAR FORMULÁRIO-->
+        <input type="submit" value="Enviar formulário" required>
+        <br></br>
+
+        </form>
+
+    
+
+    <hr><br>
+    <a href="index.html">Voltar para principal</a>
+    
+</body>
+</html>
